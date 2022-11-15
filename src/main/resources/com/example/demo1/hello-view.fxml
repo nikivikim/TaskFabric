@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.HelloController">
+    <children>
+        <Label contentDisplay="CENTER" layoutX="104.0" layoutY="38.0" prefHeight="46.0" prefWidth="209.0" text="Введите номер фигуры:" textAlignment="CENTER">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <TextField fx:id="tfNumberOfSides" layoutX="281.0" layoutY="48.0" prefHeight="25.0" prefWidth="31.0" />
+        <Label layoutX="53.0" layoutY="20.0" prefHeight="17.0" prefWidth="320.0" text="0 - Линия, 1 - Прямоугольник, 2 - Второй прямоугольник" />
+        <Button fx:id="btn" layoutX="326.0" layoutY="48.0" mnemonicParsing="false" onAction="#addPicker" prefHeight="25.0" prefWidth="85.0" text="Нарисовать" />
+        <Canvas fx:id="myCanvas" height="162.0" layoutX="26.0" layoutY="111.0" width="400.0" />
+        <Label fx:id="lblInfo" alignment="CENTER" layoutX="49.0" layoutY="278.0" prefHeight="17.0" prefWidth="350.0" textAlignment="CENTER" />
+    </children>
+</AnchorPane>
